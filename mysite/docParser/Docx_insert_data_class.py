@@ -12,8 +12,8 @@ class docx_insert_data_class:
         template = self.doc_path
         document = MailMerge(template)
         document.merge_pages([dict])
-        document.write(filename)
-        return filename
+        document.write('blanks/'+filename)
+        return 'blanks/'+filename
 
     def get_fields(self):
         template = self.doc_path
@@ -22,8 +22,7 @@ class docx_insert_data_class:
 
     def get_file_name(self):
         filename = 'Blank_' + str(datetime.datetime.now().strftime("%H%M%S")) + '.docx'
-        path = '/blanks'
-        return path + filename
+        return filename
 
 
 
