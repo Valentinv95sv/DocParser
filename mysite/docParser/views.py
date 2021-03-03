@@ -10,13 +10,14 @@ inserted_data = {
     'max_work' : 'qwerrty'
 }
 template = 'docParser/Doc_form.docx'
+path = 'blanks/'
 a = Docx_insert_data_class.docx_insert_data_class(template, inserted_data)
 
 def index(request):
     return render(request, 'test.html')
 
 def download(request):
-    file_path = a.get_new_file(a.get_file_name())
+    file_path = a.get_new_file(path + a.get_file_name())
     if os.path.exists(file_path):
         with open(file_path, 'rb') as fh:
             response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
