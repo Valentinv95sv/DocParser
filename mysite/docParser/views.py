@@ -116,23 +116,23 @@ insert_table8 = [
         'position2':'dj',
         'full_name2':'david guetta'
     },
-{
+    {
         'position2':'dj',
         'full_name2':'david guetta'
     },
-{
+    {
         'position2':'dj',
         'full_name2':'david guetta'
     },
-{
+    {
         'position2':'dj',
         'full_name2':'david guetta'
     },
-{
+    {
         'position2':'dj',
         'full_name2':'david guetta'
     },
-{
+    {
         'position2':'dj',
         'full_name2':'david guetta'
     },
